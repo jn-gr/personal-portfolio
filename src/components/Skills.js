@@ -2,6 +2,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import projectHolder from "../assets/img/project-holder.png"
+import jogo from "../assets/img/jogo.jpg"
 
 
 export const Skills = () => {
@@ -34,20 +35,20 @@ export const Skills = () => {
                             <p>My skills</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={projectHolder} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={jogo} alt="Image" />
+                                    <h5>Skill 1</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={projectHolder} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <img src={jogo} alt="Image" />
+                                    <h5>Skill 2</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={projectHolder} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <img src={jogo} alt="Image" />
+                                    <h5>Skill 3</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={projectHolder} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={jogo} alt="Image" />
+                                    <h5>Skill 4</h5>
                                 </div>
                             </Carousel>
                         </div>

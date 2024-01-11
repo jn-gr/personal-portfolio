@@ -49,7 +49,7 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <div>
-              <h1>{`Hi! I'm Jenish`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+              <h1>{`Hi! I'm Jenish,`} <span className="wrap">{text}</span></h1>
               <p>I am a passionate and dedicated computer science student with a keen interest in exploring and mastering the ever-evolving world of technology. Currently pursuing my Computer Science degree at Queen Mary University of London, I am driven by a curiosity to understand the intricacies of computer science and its applications.</p>
             </div>
           </Col>

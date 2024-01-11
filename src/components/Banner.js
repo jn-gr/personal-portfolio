@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.png";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,8 +7,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Student, Aspiring software engineer" ];
-  const period = 2000;
+  const toRotate = ["Computer Science Student"];
+  const period = 1500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -50,25 +46,14 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
+        <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Jenish`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Student" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>need to write this</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
+            <div>
+              <h1>{`Hi! I'm Jenish`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+              <p>I am a passionate and dedicated computer science student with a keen interest in exploring and mastering the ever-evolving world of technology. Currently pursuing my Computer Science degree at Queen Mary University of London, I am driven by a curiosity to understand the intricacies of computer science and its applications.</p>
+            </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
